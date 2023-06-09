@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+
+<!--    CSS File Name   -->
+    <link rel="stylesheet" href=SurveyFromUsingHTML.css>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title">
+                Survey from Frank
+            </h1>
+            <p id="description">
+                Thank you for taking time to do this.
+            </p>
+        </header>
+
+        <form action="" id="survey-form">
+<!--            Text section            -->
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text"
+                       name="name" id="name"
+                       class="formControl"
+                       placeholder="Enter your name"
+                       required>
+
+            </div>
+<!--            end of text section     -->
+
+<!--            type email section      -->
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email"
+                       name="email" id="email"
+                       class="formControl"
+                       placeholder="Enter your email"
+                       required>
+            </div>
+<!--            end email section       -->
+
+<!--            number section          -->
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="phone"
+                       name="phone" id="phone"
+                       class="formControl"
+                       placeholder="Enter your number"
+                       required>
+            </div>
+<!--            end number section      -->
+
+<!--            address section         -->
+            <div class="form-group">
+                <label for="address">Address<span class="clue">(optional)</span> </label>
+                <input type="address"
+                       name="address" id="address"
+                       class="formControl"
+                       placeholder="Enter your address"
+                       required>
+            </div>
+<!--            end of address section  -->
+
+            <div class="form-group">
+                <p id="quest"> Which option best describe your current role?</p>
+                <select name="role" id="dropdown" class="formControl" required>
+                    <option value="" disabled selected>Select current role</option>
+                    <option value="student">Student</option>
+                    <option value="teacher">Teacher</option>
+                    <option value="job">Job</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+<!--            end of select section       -->
+
+<!--            radio button section        -->
+            <div class="form-group">
+                <p id="quest">How you come to know about Frank</p>
+                <label for="">
+                    <input type="radio"
+                           name="source"
+                           value="friends"
+                           class="inputRadio"
+                           >Friends
+                </label>
+                <label for="">
+                    <input type="radio"
+                           name="source"
+                           value="tv-ads"
+                           class="inputRadio"
+                           >TV Ads
+                </label>
+                <label for="">
+                    <input type="radio"
+                           name="source"
+                           value="social-media"
+                           class="inputRadio"
+                           >Social Media
+                </label>
+                <label for="">
+                    <input type="radio"
+                           name="source"
+                           value="newspapers"
+                           class="inputRadio"
+                           >Newspapers
+                </label>
+                <label for="">
+                    <input type="radio" name="source" value="others" class="inputRadio">Others
+                </label>
+            </div>
+<!--            end of radio button section        -->
+
+<!--            checkbox section            -->
+            <div class="form-group">
+                <p id="quest">Would you like to see improved</p>
+                <label for="">
+                    <input type="checkbox" name="prefer" class="checkbox" value="back-end-dev">Back-end Developer
+                    <input type="checkbox" name="prefer" class="checkbox" value="soft-engineer">Software Engineering
+                    <input type="checkbox" name="prefer" class="checkbox" value="other">Other
+                </label>
+            </div>
+<!--            end of checkbox section     -->
+
+
+<!--            Textarea section            -->
+            <div class="form-group">
+                <p id="quest">Give us your feedback</p>
+                <textarea name="feedback" id="feedback" cols="30" rows="5" class="textarea" placeholder="Enter your feedback here..."></textarea>
+            </div>
+<!--            end of textarea section     -->
+
+<!--            submit button               -->
+            <div class="form-group">
+                <button type="submit" id="submit" id="submit" class="btn">Submit</button>
+            </div>
+<!--            end of submit button        -->
+
+        </form>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

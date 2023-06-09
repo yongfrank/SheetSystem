@@ -1,0 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+:root{
+    --color-white: #f3f3f3;
+    --color-darkblue: #796ec8;
+    --color-darkblue-alpha: rgba(13,138,187,8);
+    --color-green: #21eb6e;
+}
